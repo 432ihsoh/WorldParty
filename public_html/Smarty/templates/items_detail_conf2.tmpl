@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<title>商品詳細</title>
+{literal}
+<script type="text/javascript">
+<!--
+function set_func_form(fn,pm){
+	document.form1.target = "_self";
+	document.form1.func.value = fn;
+	document.form1.param.value = pm;
+	document.form1.submit();
+}
+
+
+// -->
+</script>
+{/literal}
+</head>
+<body>
+<!-- 全体コンテナ　-->
+<div id="container">
+{include file='./gmenu.tmpl'}
+<div id="headTitle">
+<h2>商品詳細</h2>
+</div>
+<!-- コンテンツ　-->
+<div id="contents">
+<form name="form1" action="{$smarty.server.PHP_SELF}" method="post" >
+<a href="items_list2.php{$page}">一覧に戻る</a><br />
+<span class="red">＊</span>は必須項目
+<table>
+<tr>
+<th>商品ID</th>
+<td width="70%">{$item_id_txt}</td>
+</tr>
+<tr>
+<th>商品名<span class="red">＊</span></th>
+<td width="70%">
+<strong>{$smarty.post.item_name|escape}</strong>
+<input type="hidden" name="item_name" value="{$smarty.post.item_name|escape}" />
+</td>
+</tr>
+<tr>
+<th>商品説明<span class="red">＊</span></th>
+<td width="70%">
+<strong>{$smarty.post.item_description|escape}</strong>
+<input type="hidden"   name="item_description" value="{$smarty.post.item_description|escape}">
+</td>
+</tr>
+<tr>
+<th>価格<span class="red">＊</span></th>
+<td width="70%">
+<strong>{$smarty.post.item_price|escape}</strong>
+<input type="hidden" name="item_price" value="{$smarty.post.item_price|escape}" />
+</td>
+</tr>
+<tr>
+<th>商品イメージ</th>
+<td width="70%">
+{if $smarty.post.item_image != ''}
+<img src="{$updir}{$smarty.post.item_image}" width="200px" /><br />
+{/if}
+<input type="hidden" name="item_image" value="{$smarty.post.item_image|escape}" />
+</td>
+</tr>
+
+</table>
+<input type="hidden" name="func" value="" />
+<input type="hidden" name="param" value="" />
+<input type="hidden" name="item_id" value="{$item_id}" />
+<p class="center">
+<input type="button"  value="戻る" onClick="javascript:set_func_form('edit','')"/>&nbsp;
+<input type="button"  value="{$button}" onClick="javascript:set_func_form('set','')"/>
+</p>
+</form>
+</div>
+<!-- /コンテンツ　-->
+</div>
+<!-- /全体コンテナ　-->
+</body>
+</html>

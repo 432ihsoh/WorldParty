@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>お支払方法　確認</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+ 
+  <div class="container">
+
+    <br>
+       <h1>お支払方法　確認</h1>
+    
+    <br>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked disabled>
+            <label class="form-check-label" for="flexRadioDefault1">
+                クレジットカード
+            </label>
+      </div>
+     
+    <br>
+
+   <form class="row g-3">
+      <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">カード番号</label>
+            <input type="text" class="form-control" name="card_mumber" id="validationDefault01" value={$card_mumber} disabled>
+            {*前の画面で入力されたカード番号を表示する*}
+      </div>
+      <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">カード名義</label>
+            <input type="text" class="form-control" name="card_name" id="validationDefault02" value={$card_name} disabled>  
+            {*前の画面で入力された姓名を表示する*}
+      </div>
+
+      <p>
+
+      <div class="col-md-4">
+            <label for="validationCustom03" class="form-label" >期限</label>
+            <input type="date" class="form-control" name="dead_line" id="validationDefault03" value={$dead_line} disabled> 
+            {*前の画面で入力されたカード期限を表示する*}
+      </div>
+
+      <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">セキュリティーコード</label>
+            <input type="text" class="form-control" name="security_cord" id="validationDefault04" value={$security_cord} disabled>
+            {*前の画面で入力されたセキュリティコードを表示する*}
+      </div>
+
+      <p>
+
+        <div class="col-12" style="text-align: center;">
+            <button type="button" class="btn btn-primary" onclick="history.back()">戻る</button>
+            <button class="btn btn-primary" type="submit">登録</button>
+        </div>
+    </form>
+  </div>
+  
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

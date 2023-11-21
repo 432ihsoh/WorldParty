@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>WorldParty</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+
+	
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+
+
+{include file="header.tmpl"}
+
+
+<div class="album py-5 bg-light">
+    <h2>管理人イチオシのおすすめ商品！！！！</h2>  
+    <div class="container">
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+            {foreach $items as $item}
+                {if $item.item_id == 5}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        
+                            <img src="item_image/{$item.item_id}.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                
+                                <b><p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {$item.item_name}
+                                </p></b>
+                                <p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {number_format($item.item_price)}円
+                                </p>
+                                <div class="btn-group">
+                                    <form action="item_des.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">詳細を見る</button>  
+                                    </form>
+                                    <form action="cart.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">カートへ追加</button>
+                                        <select name="num">
+                                            <option value=1>1</option>
+                                            <option value=2>2</option>
+                                            <option value=3>3</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {if $item.item_id == 13}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            
+                            
+                            <img src="item_image/{$item.item_id}.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                
+                                <b><p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {$item.item_name}
+                                </p></b>
+                                <p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {number_format($item.item_price)}円
+                                </p>
+                                <div class="btn-group">
+                                    <form action="item_des.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">詳細を見る</button>  
+                                    </form>
+                                    <form action="cart.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">カートへ追加</button>
+                                        <select name="num">
+                                            <option value=1>1</option>
+                                            <option value=2>2</option>
+                                            <option value=3>3</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {if $item.item_id == 3}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            
+                            
+                            <img src="item_image/{$item.item_id}.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                
+                                <b><p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {$item.item_name}
+                                </p></b>
+                                <p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {number_format($item.item_price)}円
+                                </p>
+                                <div class="btn-group">
+                                    <form action="item_des.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">詳細を見る</button>  
+                                    </form>
+                                    <form action="cart.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">カートへ追加</button>
+                                        <select name="num">
+                                            <option value=1>1</option>
+                                            <option value=2>2</option>
+                                            <option value=3>3</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+            {/foreach}
+        </div>
+    </div>
+    <h2 style="margin-top: 50px;">大人気のパーティーグッズ</h2> 
+    <div class="container">
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+            {foreach $items as $item}
+                {if $item.item_id == 7}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                        
+                            <img src="item_image/{$item.item_id}.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                
+                                <b><p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {$item.item_name}
+                                </p></b>
+                                <p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {number_format($item.item_price)}円
+                                </p>
+                                <div class="btn-group">
+                                    <form action="item_des.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">詳細を見る</button>  
+                                    </form>
+                                    <form action="cart.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">カートへ追加</button>
+                                        <select name="num">
+                                            <option value=1>1</option>
+                                            <option value=2>2</option>
+                                            <option value=3>3</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {if $item.item_id == 19}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            
+                            
+                            <img src="item_image/{$item.item_id}.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                
+                                <b><p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {$item.item_name}
+                                </p></b>
+                                <p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {number_format($item.item_price)}円
+                                </p>
+                                <div class="btn-group">
+                                    <form action="item_des.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">詳細を見る</button>  
+                                    </form>
+                                    <form action="cart.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">カートへ追加</button>
+                                        <select name="num">
+                                            <option value=1>1</option>
+                                            <option value=2>2</option>
+                                            <option value=3>3</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {if $item.item_id == 20}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            
+                            
+                            <img src="item_image/{$item.item_id}.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                            <div class="card-body">
+                                
+                                <b><p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {$item.item_name}
+                                </p></b>
+                                <p class="card-text" style="font-size: 20px; text-align: center;">
+                                    {number_format($item.item_price)}円
+                                </p>
+                                <div class="btn-group">
+                                    <form action="item_des.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">詳細を見る</button>  
+                                    </form>
+                                    <form action="cart.php" method="post">
+                                        <input type="hidden" name="item_id" value="{$item.item_id}">
+                                        <button type="submit" class="btn btn-primary main-button">カートへ追加</button>
+                                        <select name="num">
+                                            <option value=1>1</option>
+                                            <option value=2>2</option>
+                                            <option value=3>3</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+            {/foreach}
+        </div>
+    </div>
+    
+</div>
+    
+{literal}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+{/literal}
+
+{include file="footer.tmpl"}
+
+</body>
+
+</html>
+
+
+ 

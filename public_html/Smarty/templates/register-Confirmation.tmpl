@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>新規登録の確認</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/original/registration.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #F5F6F8;">
+
+ <div class="container">
+     <a href="registration.html" style="font-size: 20px;">>戻る</a>
+        <h1 style="text-align: center;">新規登録の確認</h1>
+        <br>
+
+    <form class="row g-3 ">
+
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">性<a style="color: red;">*</a></label>
+            <input type="text" class="form-control" id="validationCustom01" value="" disabled>
+            {前の画面で入力された性を表示する}
+
+
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">名<a style="color: red;">*</a></label>
+            <input type="text" class="form-control" id="validationCustom02" value="" disabled>
+            {前の画面で入力された名を表示する}
+
+        </div>
+
+        <a>生年月日<span style="color: red;">*</span>
+        <div class="parent" style="width: 60%;">
+            <input type="text" class="form-control" name="year" size="2" disabled >年
+            {前の画面で入力された年を表示する}
+            <input type="text" class="form-control" name="month"  size="2" disabled>月
+            {前の画面で入力された月を表示する}
+            <input type="text" class="form-control" name="day" size="2" disabled>日
+            {前の画面で入力された日を表示する}
+        </div>
+        </a>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Eメールアドレス<a style="color: red;">*</a></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+          {前の画面で入力されたメールアドレスを表示する}
+
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">パスワード<a style="color: red;">*</a></label>
+          <div class="input-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" disabled>
+          {前の画面で入力されたパスワードを表示する}
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>郵便番号<a style="color: red;">*</a></label>
+            <input type="text" class="form-control"disabled>
+            {前の画面で入力された郵便番号を表示する}
+
+        </div>
+        <div class="mb-3">
+            <label>住所<a style="color: red;">*</a></label>
+            <input  class="form-control" disabled>
+            {前の画面で入力された住所を表示する}
+        </div>
+        <div class="mb-3">
+            <label>電話番号<a style="color: red;">*</a></label>
+            <input  class="form-control" disabled>
+            {前の画面で入力された電話番号を表示する}
+        </div>
+
+
+
+        <div style="text-align: center;">
+        <button type="submit" class="btn btn-primary rounded-pill" style="width:50%;">登録</button>
+        </div>
+
+    </form>
+</div>
+      <br>
+
+
+</body>
+</html>

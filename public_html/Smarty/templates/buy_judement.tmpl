@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>購入成功 or 失敗</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<header>
+    ヘッダー
+</header>
+
+<body>
+
+　　{if カード情報が登録されていたら}
+    <div class="container-fluid">
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="購入が完了しました。ご注文ありがとうございます！！" style="background-color: #6DFF6D;">
+        </div>
+    </div>
+     
+　　{else if カード情報が入力されていなかったら}
+    <div class="container-fluid">
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="購入できませんでした。マイページでお支払方法を入力してください" style="background-color: #6DFF6D;">
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

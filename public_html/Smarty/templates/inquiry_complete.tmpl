@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>お問い合わせ完了|WorldParty(仮)</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+
+	
+    <link href="css/header.css" rel="stylesheet">
+</head>
+
+<body>
+	{include file="header.tmpl"}
+	<div class="container my-5">
+		<h1 class="text-center">お問い合わせ</h1>
+		<h4 class="text-center" style="padding:20px">お問い合わせフォームの送信を完了致しました。</h4>
+		<p class="text-center">
+			この度はお問い合わせいただきまして誠にありがとうございます。<br>
+			ご入力頂いたメールアドレス宛へ、ご確認メールをお送りしておりますのでご確認ください。<br>
+			内容を確認次第、担当者より折返しご連絡させていただきます。今しばらくお待ちくださいませ。
+		</p>
+		
+		<div class="text-center" style="padding:20px">
+			<button type="submit" class="btn btn-outline-primary main-button" onclick="location.href='index.php'">トップページへ戻る</button>
+		</div>
+	</div>
+	{include file="footer2.tmpl"}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

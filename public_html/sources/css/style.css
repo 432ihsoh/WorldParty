@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+  /* ==============　ページ全体の書式指定　============== */
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    background-color: #F8F9FA;
+  }
+  #container{
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #F8F9FA;
+  }
+
+
+  /* ================　メインの書式指定　================ */
+  #peach{
+    background-image: url(image/peach_header1.jpg);
+    background-size: cover;
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+  #top{
+    font-size: 100px;
+  }
+  #catchcopy{
+    font-size: 21px;
+  }
+  #main{
+    padding: 30px;
+  }
+  #jikosyoukai{
+    font-size: 20px;
+  }
+  .index_image{
+    float: left;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0px 40px 10px 0px;
+  }
+  .peach_image{
+    float: left;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px 40px 10px 0px;
+  }
+  .item_image{
+    float: left;
+    height: 350px;
+    border-radius: 10px;
+    margin: 0px 40px 20px 0px;
+  }
+  /*桃の名前と囲むやつ <a>*/
+  .peach_name{ 
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #FFF1AB;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 20px 0px;
+  }
+  /*桃の紹介文 <p>*/
+  .syoukaibun{
+    margin-left: 10px;
+    font-size:  18px;
+  }
+  .description{
+    margin-left: 250px;
+    font-size:  18px;
+  }
+  .item_name{
+    font-size: 24px;
+  }
+  .value{
+    font-size: 19px;
+  }
+  .buy{
+    margin-left: 110px;
+    height: 50px;
+    width: 125px;
+  }
+  .item_buy{
+    margin-left: 650px;
+  }
+
+  /*商品一覧*/
+  #ichiran{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+  }
+  #ichiran a:hover{
+    color: #C5956B
+  }
+
+  /*特定商取引法*/
+  .collapse{
+    border-collapse: collapse;
+  }
+
+  /*お問い合わせ*/
+  .form_but{
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /*商品ページ*/
+  #item_page{
+    width: 855px;
+    margin-left: 20px;
+  }
+
+
+  /* ================　各要素の書式指定　================ */
+  h1{
+    background-color: #f09199;
+    border-radius: 5px;
+    border-left: solid 15px #000000;
+    padding: 6px 10px 4px;
+    
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #999999;
+    font: bold 18px sans-serif;
+    color: #FFFFFF;
+    height: 30px;
+  }
+  table{
+    width: 800px;
+    margin-left: 75px;
+  }
+
+  th,td{
+    border: solid 2px #000000;
+  }
+  th{
+    background-color: #BFC5CA;
+    width: 250px;
+  }
+  td{
+    padding: 10px 0px 10px 10px;
+  }
+  #box-image{
+    width: 280px;
+    height: 240px;
+    float: left;
+    background-color: #ffffff;
+    border-bottom:solid 2px #918d8d83;
+    margin-left: 13%;
+    padding: 10px 20px 0px 10px;
+  }
+  #box1{
+    width: 320px;
+    height: 240px;
+    float: left;
+    background-color: #ffffff;
+    border-bottom:solid 2px #918d8d83;
+    padding-left: 10px;
+    margin: 0 11% 0 0;
+  }
+  #box2{
+    width: 280px;
+    height: 240px;
+    float: left;
+    padding: 0 50px 50px 50px;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+  }
+  
+  .title{
+    margin-top: 45px;
+    font-size: 20px;
+  }
+  .name{
+    font-size: 20px;
+  }
+
+  #box4{
+    width: 320px;
+    height: 200px;
+    float: left;
+    background-color: #ffffff;
+    border-bottom:solid 2px #918d8d83;
+    padding-left: 10px;
+    margin: 0 11% 0 0;
+  }

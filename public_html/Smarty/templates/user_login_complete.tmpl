@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン完了</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+    <link href="css/change_password.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    
+    
+</head>
+
+<body >
+
+	{include file="header.tmpl"}
+
+	<div class="container" style="width: 800px; text-align: center;">
+		<img src="image/welcome.png" alt="Welcome" width="350px">
+		<h1 style="text-align: center;">ようこそ、{$smarty.session.tmB2023_mem.last_name}さん</h1> 
+		<br>
+
+		<p style="margin: 30px; font-size: 18px;">それでは楽しいショッピングのお時間をお楽しみください。</p>   
+		<br>
+
+		<div style="text-align: center;">
+			<button type="submit" class="btn btn-primary rounded-pill main-button" style="width:50%;" onclick="location.href='index.php'">トップページ</button>
+		</div>
+       
+	</div>
+{include file="footer2.tmpl"}
+</body>
+</html>

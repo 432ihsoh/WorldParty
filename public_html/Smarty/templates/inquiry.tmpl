@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>お問い合わせ|WorldParty(仮)</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+
+	
+    <link href="css/header.css" rel="stylesheet">
+</head>
+
+<body>
+	{include file="header.tmpl"}
+	<div class="container my-5">
+		<form action="inquiry_confirm.php" method="post"> 
+			<h1 class="text-center">お問い合わせ</h1>
+			<div class="form-group col-md-8">
+				<label>メールアドレス <span class="badge bg-danger">必須</span></label>
+				<input type="email" name="email" class="form-control" placeholder="メールアドレス" required>
+			</div>
+			<div class="form-group col-md-8">
+				<label>タイトル <span class="badge bg-danger">必須</span></label>
+				<input type="text" name="title" class="form-control" placeholder="タイトル" required>
+			</div>
+			<div class="form-group">
+				<label>お問い合わせ内容 <span class="badge bg-danger">必須</span></label>
+				<textarea rows="6" cols="40" name="content" type="text" class="form-control" required></textarea>
+			</div>
+			
+			<div class="text-center" style="padding:20px">
+				<button type="submit" class="btn btn-outline-primary main-button">送信する</button>
+			</div>
+		</form>
+	</div>
+	{include file="footer2.tmpl"}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

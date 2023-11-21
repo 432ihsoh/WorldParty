@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+
+h2 {
+    background-color: #f09199;
+    border-radius: 5px;
+    border-left: solid 15px #000000;
+    padding: 3px 10px 10px 10px;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font: bold 18px sans-serif;
+    color: #FFFFFF;
+    height: 30px;
+}
+.header-button{
+	color: #000000;
+	background: #F9D6F3;
+	border: none;
+	border-radius: 100px;
+	margin-left: 10px;
+	width: 115px;
+}
+.header-button-default{
+	color: #000000;
+	background: #F9D6F3;
+	border: none;
+	border-radius: 100px;
+	margin-left: 135px;
+	width: 115px;
+}
+.search-area{
+	color: #000000;
+	border: 1px solid ;
+	border-radius: 100px 0 0 100px;
+	height: 40px;
+	width: 400px;
+	padding-left: 20px;
+	margin-left: 130px;
+	margin-right: -4px;
+	
+}
+.search-button{
+	background-color: #BCBCBC;
+	border: 1px solid black;
+	border-radius: 0 100px 100px 0;
+	height: 40px;
+	margin-right: 20px;
+	margin-bottom: 4px;
+}
+.main-button{
+	color: #000000;
+	background: #F9D6F3;
+	border: none;
+	border-radius: 100px;
+	margin-left: 10px;
+	width: 140px;
+}
+.top-button{
+	color: #000000;
+	background: #F9D6F3;
+	border: none;
+	border-radius: 100px;
+	margin-left: 10px;
+	width: 200px;
+}

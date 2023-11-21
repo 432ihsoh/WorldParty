@@ -1,0 +1,17 @@
+.container{
+    width: 28%;
+    border: solid 1px white;
+    background-color: white;
+    border-radius:10px 10px 0px 0px;
+    margin-top: 5%;
+}
+
+
+.parent {
+ display: flex; gap: 10px;
+}
+
+.parent>div{
+    padding-right: 5%;
+}
+ 
